@@ -1,0 +1,7350 @@
+version: 1
+directus: 9.8.0
+collections:
+  - collection: article
+    meta:
+      collection: article
+      icon: null
+      note: null
+      display_template: null
+      hidden: false
+      singleton: false
+      translations:
+        - language: de-DE
+          translation: Artikel
+          singular: Artikel
+          plural: Artikel
+      archive_field: status
+      archive_app_filter: true
+      archive_value: archived
+      unarchive_value: draft
+      sort_field: sort
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 2
+      group: null
+      collapse: open
+    schema:
+      name: article
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: article_channel
+    meta:
+      collection: article_channel
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 4
+      group: article
+      collapse: open
+    schema:
+      name: article_channel
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: article_directus_users
+    meta:
+      collection: article_directus_users
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 1
+      group: article
+      collapse: open
+    schema:
+      name: article_directus_users
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: article_directus_users_1
+    meta:
+      collection: article_directus_users_1
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 2
+      group: article
+      collapse: open
+    schema:
+      name: article_directus_users_1
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: article_directus_users_2
+    meta:
+      collection: article_directus_users_2
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 3
+      group: article
+      collapse: open
+    schema:
+      name: article_directus_users_2
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: article_link
+    meta:
+      collection: article_link
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 5
+      group: article
+      collapse: open
+    schema:
+      name: article_link
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: article_medical_subject
+    meta:
+      collection: article_medical_subject
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 6
+      group: article
+      collapse: open
+    schema:
+      name: article_medical_subject
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: channel
+    meta:
+      collection: channel
+      icon: null
+      note: null
+      display_template: '{{title}}'
+      hidden: false
+      singleton: false
+      translations:
+        - language: de-DE
+          translation: Kanal
+          singular: Kanal
+          plural: Kanäle
+      archive_field: status
+      archive_app_filter: true
+      archive_value: archived
+      unarchive_value: draft
+      sort_field: sort
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 3
+      group: null
+      collapse: open
+    schema:
+      name: channel
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: channel_directus_users
+    meta:
+      collection: channel_directus_users
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 1
+      group: channel
+      collapse: open
+    schema:
+      name: channel_directus_users
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: channel_directus_users_1
+    meta:
+      collection: channel_directus_users_1
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 2
+      group: channel
+      collapse: open
+    schema:
+      name: channel_directus_users_1
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: channel_directus_users_2
+    meta:
+      collection: channel_directus_users_2
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 3
+      group: channel
+      collapse: open
+    schema:
+      name: channel_directus_users_2
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: Directories
+    meta:
+      collection: Directories
+      icon: folder
+      note: null
+      display_template: null
+      hidden: false
+      singleton: false
+      translations:
+        - language: de-DE
+          translation: Verzeichnis
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 1
+      group: null
+      collapse: open
+    schema: null
+  - collection: gallery
+    meta:
+      collection: gallery
+      icon: null
+      note: null
+      display_template: '{{title}}'
+      hidden: false
+      singleton: false
+      translations:
+        - language: de-DE
+          translation: Galerie
+          singular: Galerie
+          plural: Galerien
+      archive_field: status
+      archive_app_filter: true
+      archive_value: archived
+      unarchive_value: draft
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 5
+      group: null
+      collapse: open
+    schema:
+      name: gallery
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: gallery_image
+    meta:
+      collection: gallery_image
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 1
+      group: gallery
+      collapse: open
+    schema:
+      name: gallery_image
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: illness
+    meta:
+      collection: illness
+      icon: null
+      note: null
+      display_template: null
+      hidden: false
+      singleton: false
+      translations:
+        - language: de-DE
+          translation: Krankheit
+          singular: Krankheit
+          plural: Krankheiten
+      archive_field: status
+      archive_app_filter: true
+      archive_value: archived
+      unarchive_value: draft
+      sort_field: sort
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 4
+      group: null
+      collapse: open
+    schema:
+      name: illness
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: illness_channel
+    meta:
+      collection: illness_channel
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 3
+      group: illness
+      collapse: open
+    schema:
+      name: illness_channel
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: illness_illness
+    meta:
+      collection: illness_illness
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 2
+      group: illness
+      collapse: open
+    schema:
+      name: illness_illness
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: illness_link
+    meta:
+      collection: illness_link
+      icon: import_export
+      note: null
+      display_template: null
+      hidden: true
+      singleton: false
+      translations: null
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 1
+      group: illness
+      collapse: open
+    schema:
+      name: illness_link
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: image
+    meta:
+      collection: image
+      icon: image
+      note: null
+      display_template: "{{file.$thumbnail}}\_-\_{{title}}"
+      hidden: false
+      singleton: false
+      translations:
+        - language: de-DE
+          translation: Bild
+          singular: Bild
+          plural: Bilder
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: sort
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 6
+      group: null
+      collapse: open
+    schema:
+      name: image
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: link
+    meta:
+      collection: link
+      icon: null
+      note: null
+      display_template: '{{title}}-{{url}}'
+      hidden: false
+      singleton: false
+      translations:
+        - language: de-DE
+          translation: Link
+          singular: Link
+          plural: Links
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: all
+      color: null
+      item_duplication_fields: null
+      sort: 2
+      group: Directories
+      collapse: open
+    schema:
+      name: link
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+  - collection: medical_subject
+    meta:
+      collection: medical_subject
+      icon: null
+      note: null
+      display_template: '{{name}}'
+      hidden: false
+      singleton: false
+      translations:
+        - language: de-DE
+          translation: Arztfach
+          singular: Arztfach
+          plural: Arztfächer
+      archive_field: null
+      archive_app_filter: true
+      archive_value: null
+      unarchive_value: null
+      sort_field: null
+      accountability: activity
+      color: null
+      item_duplication_fields: '["name"]'
+      sort: 1
+      group: Directories
+      collapse: open
+    schema:
+      name: medical_subject
+      schema: directus
+      comment: ''
+      collation: utf8mb4_general_ci
+      engine: InnoDB
+fields:
+  - collection: article_directus_users
+    field: article_id
+    type: integer
+    schema:
+      name: article_id
+      table: article_directus_users
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: article
+      comment: ''
+    meta:
+      collection: article_directus_users
+      field: article_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_directus_users
+    field: directus_users_id
+    type: string
+    schema:
+      name: directus_users_id
+      table: article_directus_users
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: article_directus_users
+      field: directus_users_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel_directus_users_1
+    field: channel_id
+    type: integer
+    schema:
+      name: channel_id
+      table: channel_directus_users_1
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: channel
+      comment: ''
+    meta:
+      collection: channel_directus_users_1
+      field: channel_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel_directus_users_1
+    field: directus_users_id
+    type: string
+    schema:
+      name: directus_users_id
+      table: channel_directus_users_1
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: channel_directus_users_1
+      field: directus_users_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness_link
+    field: illness_id
+    type: integer
+    schema:
+      name: illness_id
+      table: illness_link
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: illness
+      comment: ''
+    meta:
+      collection: illness_link
+      field: illness_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness_link
+    field: link_id
+    type: integer
+    schema:
+      name: link_id
+      table: illness_link
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: link
+      comment: ''
+    meta:
+      collection: illness_link
+      field: link_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: file
+    type: uuid
+    schema:
+      name: file
+      table: image
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_files
+      comment: ''
+    meta:
+      collection: image
+      field: file
+      special:
+        - file
+      interface: file-image
+      options:
+        folder: null
+      display: image
+      display_options: {}
+      readonly: false
+      hidden: false
+      sort: 8
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: user_created
+    type: string
+    schema:
+      name: user_created
+      table: image
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: image
+      field: user_created
+      special:
+        - user-created
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 10
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: user_updated
+    type: string
+    schema:
+      name: user_updated
+      table: image
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: image
+      field: user_updated
+      special:
+        - user-updated
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 12
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness_channel
+    field: channel_id
+    type: integer
+    schema:
+      name: channel_id
+      table: illness_channel
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: channel
+      comment: ''
+    meta:
+      collection: illness_channel
+      field: channel_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness_channel
+    field: illness_id
+    type: integer
+    schema:
+      name: illness_id
+      table: illness_channel
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: illness
+      comment: ''
+    meta:
+      collection: illness_channel
+      field: illness_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: author
+    type: string
+    schema:
+      name: author
+      table: illness
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: illness
+      field: author
+      special:
+        - m2o
+      interface: select-dropdown-m2o
+      options:
+        template: "{{first_name}}\_{{last_name}}"
+      display: related-values
+      display_options:
+        template: "{{first_name}}\_{{last_name}}"
+      readonly: false
+      hidden: false
+      sort: 14
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: channel_main
+    type: integer
+    schema:
+      name: channel_main
+      table: illness
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: channel
+      comment: ''
+    meta:
+      collection: illness
+      field: channel_main
+      special:
+        - m2o
+      interface: select-dropdown-m2o
+      options:
+        template: '{{title}}'
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 12
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: editor
+    type: string
+    schema:
+      name: editor
+      table: illness
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: illness
+      field: editor
+      special:
+        - m2o
+      interface: select-dropdown-m2o
+      options:
+        template: "{{first_name}}\_{{last_name}}"
+      display: related-values
+      display_options:
+        template: "{{first_name}}\_{{last_name}}"
+      readonly: false
+      hidden: false
+      sort: 15
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: medical_subject
+    type: integer
+    schema:
+      name: medical_subject
+      table: illness
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: medical_subject
+      comment: ''
+    meta:
+      collection: illness
+      field: medical_subject
+      special:
+        - m2o
+      interface: select-dropdown-m2o
+      options:
+        template: '{{name}}'
+      display: related-values
+      display_options:
+        template: '{{name}}'
+      readonly: false
+      hidden: false
+      sort: 18
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: reviewer
+    type: string
+    schema:
+      name: reviewer
+      table: illness
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: illness
+      field: reviewer
+      special:
+        - m2o
+      interface: select-dropdown-m2o
+      options:
+        template: "{{first_name}}\_{{last_name}}"
+      display: related-values
+      display_options:
+        template: "{{first_name}}\_{{last_name}}"
+      readonly: false
+      hidden: false
+      sort: 16
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: teaser
+    type: uuid
+    schema:
+      name: teaser
+      table: illness
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_files
+      comment: ''
+    meta:
+      collection: illness
+      field: teaser
+      special:
+        - file
+      interface: file-image
+      options:
+        folder: null
+      display: image
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 4
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: user_created
+    type: string
+    schema:
+      name: user_created
+      table: illness
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: illness
+      field: user_created
+      special:
+        - user-created
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 24
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: user_updated
+    type: string
+    schema:
+      name: user_updated
+      table: illness
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: illness
+      field: user_updated
+      special:
+        - user-updated
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 26
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_link
+    field: article_id
+    type: integer
+    schema:
+      name: article_id
+      table: article_link
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: article
+      comment: ''
+    meta:
+      collection: article_link
+      field: article_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_link
+    field: link_id
+    type: integer
+    schema:
+      name: link_id
+      table: article_link
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: link
+      comment: ''
+    meta:
+      collection: article_link
+      field: link_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: link
+    field: user_created
+    type: string
+    schema:
+      name: user_created
+      table: link
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: link
+      field: user_created
+      special:
+        - user-created
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 4
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: link
+    field: user_updated
+    type: string
+    schema:
+      name: user_updated
+      table: link
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: link
+      field: user_updated
+      special:
+        - user-updated
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 6
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_channel
+    field: article_id
+    type: integer
+    schema:
+      name: article_id
+      table: article_channel
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: article
+      comment: ''
+    meta:
+      collection: article_channel
+      field: article_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_channel
+    field: channel_id
+    type: integer
+    schema:
+      name: channel_id
+      table: article_channel
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: channel
+      comment: ''
+    meta:
+      collection: article_channel
+      field: channel_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: parent_channel_id
+    type: integer
+    schema:
+      name: parent_channel_id
+      table: channel
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: channel
+      comment: ''
+    meta:
+      collection: channel
+      field: parent_channel_id
+      special:
+        - m2o
+      interface: select-dropdown-m2o
+      options:
+        template: '{{title}}'
+        filter:
+          _and:
+            - status:
+                _eq: published
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 10
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: teaser
+    type: uuid
+    schema:
+      name: teaser
+      table: channel
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_files
+      comment: ''
+    meta:
+      collection: channel
+      field: teaser
+      special:
+        - file
+      interface: file-image
+      options:
+        folder: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 6
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: user_created
+    type: string
+    schema:
+      name: user_created
+      table: channel
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: channel
+      field: user_created
+      special:
+        - user-created
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 13
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: user_updated
+    type: string
+    schema:
+      name: user_updated
+      table: channel
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: channel
+      field: user_updated
+      special:
+        - user-updated
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 15
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: medical_subject
+    field: user_created
+    type: string
+    schema:
+      name: user_created
+      table: medical_subject
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: medical_subject
+      field: user_created
+      special:
+        - user-created
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 3
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: medical_subject
+    field: user_updated
+    type: string
+    schema:
+      name: user_updated
+      table: medical_subject
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: medical_subject
+      field: user_updated
+      special:
+        - user-updated
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 5
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery
+    field: teaser
+    type: uuid
+    schema:
+      name: teaser
+      table: gallery
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_files
+      comment: ''
+    meta:
+      collection: gallery
+      field: teaser
+      special:
+        - file
+      interface: file-image
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 3
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery
+    field: user_created
+    type: string
+    schema:
+      name: user_created
+      table: gallery
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: gallery
+      field: user_created
+      special:
+        - user-created
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 6
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery
+    field: user_updated
+    type: string
+    schema:
+      name: user_updated
+      table: gallery
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: gallery
+      field: user_updated
+      special:
+        - user-updated
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 8
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_medical_subject
+    field: article_id
+    type: integer
+    schema:
+      name: article_id
+      table: article_medical_subject
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: article
+      comment: ''
+    meta:
+      collection: article_medical_subject
+      field: article_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_medical_subject
+    field: medical_subject_id
+    type: integer
+    schema:
+      name: medical_subject_id
+      table: article_medical_subject
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: medical_subject
+      comment: ''
+    meta:
+      collection: article_medical_subject
+      field: medical_subject_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel_directus_users
+    field: channel_id
+    type: integer
+    schema:
+      name: channel_id
+      table: channel_directus_users
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: channel
+      comment: ''
+    meta:
+      collection: channel_directus_users
+      field: channel_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel_directus_users
+    field: directus_users_id
+    type: string
+    schema:
+      name: directus_users_id
+      table: channel_directus_users
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: channel_directus_users
+      field: directus_users_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness_illness
+    field: illness_id
+    type: integer
+    schema:
+      name: illness_id
+      table: illness_illness
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: illness
+      comment: ''
+    meta:
+      collection: illness_illness
+      field: illness_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness_illness
+    field: related_illness_id
+    type: integer
+    schema:
+      name: related_illness_id
+      table: illness_illness
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: illness
+      comment: ''
+    meta:
+      collection: illness_illness
+      field: related_illness_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel_directus_users_2
+    field: channel_id
+    type: integer
+    schema:
+      name: channel_id
+      table: channel_directus_users_2
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: channel
+      comment: ''
+    meta:
+      collection: channel_directus_users_2
+      field: channel_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel_directus_users_2
+    field: directus_users_id
+    type: string
+    schema:
+      name: directus_users_id
+      table: channel_directus_users_2
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: channel_directus_users_2
+      field: directus_users_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: channel_main
+    type: integer
+    schema:
+      name: channel_main
+      table: article
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: channel
+      comment: ''
+    meta:
+      collection: article
+      field: channel_main
+      special:
+        - m2o
+      interface: select-dropdown-m2o
+      options:
+        template: '{{title}}'
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 10
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: teaser
+    type: uuid
+    schema:
+      name: teaser
+      table: article
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_files
+      comment: ''
+    meta:
+      collection: article
+      field: teaser
+      special:
+        - file
+      interface: file-image
+      options: null
+      display: image
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 3
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: user_created
+    type: string
+    schema:
+      name: user_created
+      table: article
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: article
+      field: user_created
+      special:
+        - user-created
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 20
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: user_updated
+    type: string
+    schema:
+      name: user_updated
+      table: article
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: article
+      field: user_updated
+      special:
+        - user-updated
+      interface: select-dropdown-m2o
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      display: user
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 22
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_directus_users_1
+    field: article_id
+    type: integer
+    schema:
+      name: article_id
+      table: article_directus_users_1
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: article
+      comment: ''
+    meta:
+      collection: article_directus_users_1
+      field: article_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_directus_users_1
+    field: directus_users_id
+    type: string
+    schema:
+      name: directus_users_id
+      table: article_directus_users_1
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: article_directus_users_1
+      field: directus_users_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery_image
+    field: gallery_id
+    type: integer
+    schema:
+      name: gallery_id
+      table: gallery_image
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: gallery
+      comment: ''
+    meta:
+      collection: gallery_image
+      field: gallery_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery_image
+    field: image_id
+    type: integer
+    schema:
+      name: image_id
+      table: gallery_image
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: image
+      comment: ''
+    meta:
+      collection: gallery_image
+      field: image_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_directus_users_2
+    field: article_id
+    type: integer
+    schema:
+      name: article_id
+      table: article_directus_users_2
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: article
+      comment: ''
+    meta:
+      collection: article_directus_users_2
+      field: article_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_directus_users_2
+    field: directus_users_id
+    type: string
+    schema:
+      name: directus_users_id
+      table: article_directus_users_2
+      data_type: char
+      default_value: null
+      generation_expression: null
+      max_length: 36
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      comment: ''
+    meta:
+      collection: article_directus_users_2
+      field: directus_users_id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_directus_users
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: article_directus_users
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article_directus_users
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel_directus_users_1
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: channel_directus_users_1
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel_directus_users_1
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness_link
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: illness_link
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness_link
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: image
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: image
+      field: id
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 1
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness_channel
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: illness_channel
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness_channel
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: illness
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: id
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 1
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_link
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: article_link
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article_link
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: link
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: link
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: link
+      field: id
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 1
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_channel
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: article_channel
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article_channel
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: channel
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: id
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 1
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: medical_subject
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: medical_subject
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: medical_subject
+      field: id
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 1
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: gallery
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: gallery
+      field: id
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 1
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_medical_subject
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: article_medical_subject
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article_medical_subject
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel_directus_users
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: channel_directus_users
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel_directus_users
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness_illness
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: illness_illness
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness_illness
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel_directus_users_2
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: channel_directus_users_2
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel_directus_users_2
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: article
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: id
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: true
+      hidden: true
+      sort: 1
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_directus_users_1
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: article_directus_users_1
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article_directus_users_1
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery_image
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: gallery_image
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: gallery_image
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article_directus_users_2
+    field: id
+    type: integer
+    schema:
+      name: id
+      table: article_directus_users_2
+      data_type: int unsigned
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: true
+      has_auto_increment: true
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article_directus_users_2
+      field: id
+      special: null
+      interface: null
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: sort
+    type: integer
+    schema:
+      name: sort
+      table: image
+      data_type: int
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: image
+      field: sort
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: 9
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: date_created
+    type: timestamp
+    schema:
+      name: date_created
+      table: image
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: image
+      field: date_created
+      special:
+        - date-created
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 11
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: date_updated
+    type: timestamp
+    schema:
+      name: date_updated
+      table: image
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: image
+      field: date_updated
+      special:
+        - date-updated
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 13
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: title
+    type: string
+    schema:
+      name: title
+      table: image
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: image
+      field: title
+      special: null
+      interface: input
+      options:
+        iconLeft: title
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 2
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: text
+    type: text
+    schema:
+      name: text
+      table: image
+      data_type: text
+      default_value: null
+      generation_expression: null
+      max_length: 65535
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: image
+      field: text
+      special: null
+      interface: input-multiline
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 3
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: copyright
+    type: text
+    schema:
+      name: copyright
+      table: image
+      data_type: text
+      default_value: null
+      generation_expression: null
+      max_length: 65535
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: image
+      field: copyright
+      special: null
+      interface: input-multiline
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 4
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: copyright_url
+    type: string
+    schema:
+      name: copyright_url
+      table: image
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: image
+      field: copyright_url
+      special: null
+      interface: input
+      options:
+        iconLeft: insert_link
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 5
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: seo_alt_text
+    type: string
+    schema:
+      name: seo_alt_text
+      table: image
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: image
+      field: seo_alt_text
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 6
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: image
+    field: title_tag
+    type: string
+    schema:
+      name: title_tag
+      table: image
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: image
+      field: title_tag
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 7
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: status
+    type: string
+    schema:
+      name: status
+      table: illness
+      data_type: varchar
+      default_value: draft
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: status
+      special: null
+      interface: select-dropdown
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      display: labels
+      display_options:
+        showAsDot: true
+        choices:
+          - text: $t:published
+            value: published
+            foreground: '#FFFFFF'
+            background: var(--primary)
+          - text: $t:draft
+            value: draft
+            foreground: '#18222F'
+            background: '#D3DAE4'
+          - text: $t:archived
+            value: archived
+            foreground: '#FFFFFF'
+            background: var(--warning)
+      readonly: false
+      hidden: false
+      sort: 21
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: sort
+    type: integer
+    schema:
+      name: sort
+      table: illness
+      data_type: int
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: sort
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: 23
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: date_created
+    type: timestamp
+    schema:
+      name: date_created
+      table: illness
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: date_created
+      special:
+        - date-created
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 25
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: date_updated
+    type: timestamp
+    schema:
+      name: date_updated
+      table: illness
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: date_updated
+      special:
+        - date-updated
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 27
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: title
+    type: string
+    schema:
+      name: title
+      table: illness
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: title
+      special: null
+      interface: input
+      options:
+        iconLeft: title
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 2
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: synonym
+    type: string
+    schema:
+      name: synonym
+      table: illness
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: synonym
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 3
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: video_embed
+    type: text
+    schema:
+      name: video_embed
+      table: illness
+      data_type: text
+      default_value: null
+      generation_expression: null
+      max_length: 65535
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: video_embed
+      special: null
+      interface: input-multiline
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 5
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: intro
+    type: text
+    schema:
+      name: intro
+      table: illness
+      data_type: text
+      default_value: null
+      generation_expression: null
+      max_length: 65535
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: intro
+      special: null
+      interface: input-multiline
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 6
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: summary
+    type: text
+    schema:
+      name: summary
+      table: illness
+      data_type: text
+      default_value: null
+      generation_expression: null
+      max_length: 65535
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: summary
+      special: null
+      interface: input-multiline
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 7
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: html_title
+    type: string
+    schema:
+      name: html_title
+      table: illness
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: html_title
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 8
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: slug
+    type: string
+    schema:
+      name: slug
+      table: illness
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: slug
+      special: null
+      interface: extension-wpslug
+      options:
+        template: '{{title}}'
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 9
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: meta_description
+    type: text
+    schema:
+      name: meta_description
+      table: illness
+      data_type: text
+      default_value: null
+      generation_expression: null
+      max_length: 65535
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: meta_description
+      special: null
+      interface: input-multiline
+      options:
+        softLength: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 10
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: date_of_medical_state
+    type: date
+    schema:
+      name: date_of_medical_state
+      table: illness
+      data_type: date
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: date_of_medical_state
+      special: null
+      interface: datetime
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 11
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: icd_code
+    type: string
+    schema:
+      name: icd_code
+      table: illness
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: icd_code
+      special: null
+      interface: select-dropdown
+      options:
+        choices:
+          - text: A
+            value: a
+          - text: B
+            value: b
+          - text: C
+            value: c
+        allowNone: true
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 20
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: tags
+    type: json
+    schema:
+      name: tags
+      table: illness
+      data_type: longtext
+      default_value: null
+      generation_expression: null
+      max_length: 4294967295
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: illness
+      field: tags
+      special:
+        - cast-json
+      interface: tags
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 22
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: link
+    field: date_created
+    type: timestamp
+    schema:
+      name: date_created
+      table: link
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: link
+      field: date_created
+      special:
+        - date-created
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 5
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: link
+    field: date_updated
+    type: timestamp
+    schema:
+      name: date_updated
+      table: link
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: link
+      field: date_updated
+      special:
+        - date-updated
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 7
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: link
+    field: title
+    type: string
+    schema:
+      name: title
+      table: link
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: link
+      field: title
+      special: null
+      interface: input
+      options:
+        iconLeft: title
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 2
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: link
+    field: url
+    type: string
+    schema:
+      name: url
+      table: link
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: link
+      field: url
+      special: null
+      interface: input
+      options:
+        iconLeft: insert_link
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 3
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: status
+    type: string
+    schema:
+      name: status
+      table: channel
+      data_type: varchar
+      default_value: draft
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: status
+      special: null
+      interface: select-dropdown
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      display: labels
+      display_options:
+        showAsDot: true
+        choices:
+          - text: $t:published
+            value: published
+            foreground: '#FFFFFF'
+            background: var(--primary)
+          - text: $t:draft
+            value: draft
+            foreground: '#18222F'
+            background: '#D3DAE4'
+          - text: $t:archived
+            value: archived
+            foreground: '#FFFFFF'
+            background: var(--warning)
+      readonly: false
+      hidden: false
+      sort: 11
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: sort
+    type: integer
+    schema:
+      name: sort
+      table: channel
+      data_type: int
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: sort
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: 12
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: date_created
+    type: timestamp
+    schema:
+      name: date_created
+      table: channel
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: date_created
+      special:
+        - date-created
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 14
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: date_updated
+    type: timestamp
+    schema:
+      name: date_updated
+      table: channel
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: date_updated
+      special:
+        - date-updated
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 16
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: title
+    type: string
+    schema:
+      name: title
+      table: channel
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: title
+      special: null
+      interface: input
+      options:
+        iconLeft: title
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 2
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: slug
+    type: string
+    schema:
+      name: slug
+      table: channel
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: slug
+      special: null
+      interface: extension-wpslug
+      options:
+        template: '{{title}}'
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 3
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: html_title
+    type: string
+    schema:
+      name: html_title
+      table: channel
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: html_title
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 4
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: meta_description
+    type: text
+    schema:
+      name: meta_description
+      table: channel
+      data_type: text
+      default_value: null
+      generation_expression: null
+      max_length: 65535
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: meta_description
+      special: null
+      interface: input-multiline
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 5
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: intro
+    type: text
+    schema:
+      name: intro
+      table: channel
+      data_type: text
+      default_value: null
+      generation_expression: null
+      max_length: 65535
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: intro
+      special: null
+      interface: input-multiline
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 7
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: ad_tag
+    type: string
+    schema:
+      name: ad_tag
+      table: channel
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: ad_tag
+      special: null
+      interface: select-dropdown
+      options:
+        choices:
+          - text: A
+            value: a
+          - text: B
+            value: b
+          - text: C
+            value: c
+        allowNone: true
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 8
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: oewa_tag
+    type: string
+    schema:
+      name: oewa_tag
+      table: channel
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: oewa_tag
+      special: null
+      interface: select-dropdown
+      options:
+        choices:
+          - text: A
+            value: a
+          - text: B
+            value: b
+          - text: C
+            value: c
+        allowNone: true
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 9
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: tags
+    type: json
+    schema:
+      name: tags
+      table: channel
+      data_type: longtext
+      default_value: null
+      generation_expression: null
+      max_length: 4294967295
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: channel
+      field: tags
+      special:
+        - cast-json
+      interface: tags
+      options:
+        iconLeft: tag
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: medical_subject
+    field: date_created
+    type: timestamp
+    schema:
+      name: date_created
+      table: medical_subject
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: medical_subject
+      field: date_created
+      special:
+        - date-created
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 4
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: medical_subject
+    field: date_updated
+    type: timestamp
+    schema:
+      name: date_updated
+      table: medical_subject
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: medical_subject
+      field: date_updated
+      special:
+        - date-updated
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 6
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: medical_subject
+    field: name
+    type: string
+    schema:
+      name: name
+      table: medical_subject
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: medical_subject
+      field: name
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 2
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery
+    field: status
+    type: string
+    schema:
+      name: status
+      table: gallery
+      data_type: varchar
+      default_value: draft
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: gallery
+      field: status
+      special: null
+      interface: select-dropdown
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      display: labels
+      display_options:
+        showAsDot: true
+        choices:
+          - text: $t:published
+            value: published
+            foreground: '#FFFFFF'
+            background: var(--primary)
+          - text: $t:draft
+            value: draft
+            foreground: '#18222F'
+            background: '#D3DAE4'
+          - text: $t:archived
+            value: archived
+            foreground: '#FFFFFF'
+            background: var(--warning)
+      readonly: false
+      hidden: false
+      sort: 5
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery
+    field: date_created
+    type: timestamp
+    schema:
+      name: date_created
+      table: gallery
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: gallery
+      field: date_created
+      special:
+        - date-created
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 7
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery
+    field: date_updated
+    type: timestamp
+    schema:
+      name: date_updated
+      table: gallery
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: gallery
+      field: date_updated
+      special:
+        - date-updated
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 9
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery
+    field: title
+    type: string
+    schema:
+      name: title
+      table: gallery
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: gallery
+      field: title
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 2
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: status
+    type: string
+    schema:
+      name: status
+      table: article
+      data_type: varchar
+      default_value: draft
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: status
+      special: null
+      interface: select-dropdown
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      display: labels
+      display_options:
+        showAsDot: true
+        choices:
+          - text: $t:published
+            value: published
+            foreground: '#FFFFFF'
+            background: var(--primary)
+          - text: $t:draft
+            value: draft
+            foreground: '#18222F'
+            background: '#D3DAE4'
+          - text: $t:archived
+            value: archived
+            foreground: '#FFFFFF'
+            background: var(--warning)
+      readonly: false
+      hidden: false
+      sort: 17
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: sort
+    type: integer
+    schema:
+      name: sort
+      table: article
+      data_type: int
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: 10
+      numeric_scale: 0
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: sort
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: true
+      sort: 19
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: date_created
+    type: timestamp
+    schema:
+      name: date_created
+      table: article
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: date_created
+      special:
+        - date-created
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 21
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: date_updated
+    type: timestamp
+    schema:
+      name: date_updated
+      table: article
+      data_type: timestamp
+      default_value: null
+      generation_expression: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: date_updated
+      special:
+        - date-updated
+      interface: datetime
+      options: null
+      display: datetime
+      display_options:
+        relative: true
+      readonly: true
+      hidden: true
+      sort: 23
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: title
+    type: string
+    schema:
+      name: title
+      table: article
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: title
+      special: null
+      interface: input
+      options:
+        placeholder: Titel
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 2
+      width: full
+      translations:
+        - language: de-DE
+          translation: Titel
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: editorjs
+    type: json
+    schema:
+      name: editorjs
+      table: article
+      data_type: longtext
+      default_value: null
+      generation_expression: null
+      max_length: 4294967295
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: editorjs
+      special:
+        - cast-json
+      interface: extension-editorjs
+      options:
+        lineNumber: false
+        tools:
+          - header
+          - list
+          - paragraph
+          - code
+          - image
+          - table
+          - quote
+          - underline
+          - delimiter
+          - checklist
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 6
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: slug
+    type: string
+    schema:
+      name: slug
+      table: article
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: slug
+      special: null
+      interface: extension-wpslug
+      options:
+        template: '{{title}}'
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 8
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: intro
+    type: text
+    schema:
+      name: intro
+      table: article
+      data_type: text
+      default_value: null
+      generation_expression: null
+      max_length: 65535
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: intro
+      special: null
+      interface: input-multiline
+      options:
+        placeholder: Einleitung
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 4
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: summary
+    type: text
+    schema:
+      name: summary
+      table: article
+      data_type: text
+      default_value: null
+      generation_expression: null
+      max_length: 65535
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: summary
+      special: null
+      interface: input-multiline
+      options:
+        placeholder: Kurzfassung
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 5
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: html_title
+    type: string
+    schema:
+      name: html_title
+      table: article
+      data_type: varchar
+      default_value: null
+      generation_expression: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: html_title
+      special: null
+      interface: input
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 7
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: meta_description
+    type: text
+    schema:
+      name: meta_description
+      table: article
+      data_type: text
+      default_value: null
+      generation_expression: null
+      max_length: 65535
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: meta_description
+      special: null
+      interface: input-multiline
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 9
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: tag
+    type: json
+    schema:
+      name: tag
+      table: article
+      data_type: longtext
+      default_value: null
+      generation_expression: null
+      max_length: 4294967295
+      numeric_precision: null
+      numeric_scale: null
+      is_generated: false
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      has_auto_increment: false
+      foreign_key_column: null
+      foreign_key_table: null
+      comment: ''
+    meta:
+      collection: article
+      field: tag
+      special:
+        - cast-json
+      interface: tags
+      options:
+        iconLeft: tag
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 18
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: author
+    type: alias
+    schema: null
+    meta:
+      collection: channel
+      field: author
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        enableCreate: false
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      display: related-values
+      display_options:
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      readonly: false
+      hidden: false
+      sort: null
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: editor
+    type: alias
+    schema: null
+    meta:
+      collection: channel
+      field: editor
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        enableCreate: false
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      display: related-values
+      display_options:
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      readonly: false
+      hidden: false
+      sort: null
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: channel
+    field: reviewer
+    type: alias
+    schema: null
+    meta:
+      collection: channel
+      field: reviewer
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        enableCreate: false
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      display: related-values
+      display_options:
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      readonly: false
+      hidden: false
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: channel_other
+    type: alias
+    schema: null
+    meta:
+      collection: illness
+      field: channel_other
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        enableCreate: false
+      display: related-values
+      display_options:
+        template: '{{channel_id.title}}'
+      readonly: false
+      hidden: false
+      sort: 13
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: symptoms
+    type: alias
+    schema: null
+    meta:
+      collection: illness
+      field: symptoms
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        enableCreate: false
+      display: related-values
+      display_options:
+        template: '{{illness_id.title}}'
+      readonly: false
+      hidden: false
+      sort: 19
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: illness
+    field: source
+    type: alias
+    schema: null
+    meta:
+      collection: illness
+      field: source
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        template: '{{link_id.title}}-{{link_id.url}}'
+      display: related-values
+      display_options:
+        template: '{{link_id.title}}-{{link_id.url}}'
+      readonly: false
+      hidden: false
+      sort: 17
+      width: full
+      translations:
+        - language: de-DE
+          translation: Quellenangaben
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: channel_other
+    type: alias
+    schema: null
+    meta:
+      collection: article
+      field: channel_other
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        enableCreate: false
+      display: related-values
+      display_options:
+        template: '{{channel_id.title}}'
+      readonly: false
+      hidden: false
+      sort: 11
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: author
+    type: alias
+    schema: null
+    meta:
+      collection: article
+      field: author
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        enableCreate: false
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      display: related-values
+      display_options:
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      readonly: false
+      hidden: false
+      sort: 12
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: true
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: editor
+    type: alias
+    schema: null
+    meta:
+      collection: article
+      field: editor
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        enableCreate: false
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      display: related-values
+      display_options:
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      readonly: false
+      hidden: false
+      sort: 13
+      width: half
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: reviewer
+    type: alias
+    schema: null
+    meta:
+      collection: article
+      field: reviewer
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        enableCreate: false
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      display: related-values
+      display_options:
+        template: "{{directus_users_id.first_name}}\_{{directus_users_id.last_name}}"
+      readonly: false
+      hidden: false
+      sort: 14
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: source
+    type: alias
+    schema: null
+    meta:
+      collection: article
+      field: source
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        template: '{{link_id.title}}-{{link_id.url}}'
+      display: related-values
+      display_options:
+        template: '{{link_id.title}}-{{link_id.url}}'
+      readonly: false
+      hidden: false
+      sort: 15
+      width: full
+      translations:
+        - language: de-DE
+          translation: Quellenangaben
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: article
+    field: medical_subject
+    type: alias
+    schema: null
+    meta:
+      collection: article
+      field: medical_subject
+      special:
+        - m2m
+      interface: list-m2m
+      options:
+        template: '{{medical_subject_id.name}}'
+      display: related-values
+      display_options:
+        template: '{{medical_subject_id.name}}'
+      readonly: false
+      hidden: false
+      sort: 16
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+  - collection: gallery
+    field: image
+    type: alias
+    schema: null
+    meta:
+      collection: gallery
+      field: image
+      special:
+        - m2m
+      interface: list-m2m
+      options: null
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: 4
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+relations:
+  - collection: article_directus_users
+    field: article_id
+    related_collection: article
+    schema:
+      table: article_directus_users
+      column: article_id
+      foreign_key_table: article
+      foreign_key_column: id
+      constraint_name: article_directus_users_article_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_directus_users
+      many_field: article_id
+      one_collection: article
+      one_field: author
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: directus_users_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article_directus_users
+    field: directus_users_id
+    related_collection: directus_users
+    schema:
+      table: article_directus_users
+      column: directus_users_id
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: article_directus_users_directus_users_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_directus_users
+      many_field: directus_users_id
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: article_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: channel_directus_users_1
+    field: channel_id
+    related_collection: channel
+    schema:
+      table: channel_directus_users_1
+      column: channel_id
+      foreign_key_table: channel
+      foreign_key_column: id
+      constraint_name: channel_directus_users_1_channel_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: channel_directus_users_1
+      many_field: channel_id
+      one_collection: channel
+      one_field: editor
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: directus_users_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: channel_directus_users_1
+    field: directus_users_id
+    related_collection: directus_users
+    schema:
+      table: channel_directus_users_1
+      column: directus_users_id
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: channel_directus_users_1_directus_users_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: channel_directus_users_1
+      many_field: directus_users_id
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: channel_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness_link
+    field: illness_id
+    related_collection: illness
+    schema:
+      table: illness_link
+      column: illness_id
+      foreign_key_table: illness
+      foreign_key_column: id
+      constraint_name: illness_link_illness_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness_link
+      many_field: illness_id
+      one_collection: illness
+      one_field: source
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: link_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness_link
+    field: link_id
+    related_collection: link
+    schema:
+      table: illness_link
+      column: link_id
+      foreign_key_table: link
+      foreign_key_column: id
+      constraint_name: illness_link_link_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness_link
+      many_field: link_id
+      one_collection: link
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: illness_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: image
+    field: file
+    related_collection: directus_files
+    schema:
+      table: image
+      column: file
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: image_file_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: image
+      many_field: file
+      one_collection: directus_files
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: image
+    field: user_created
+    related_collection: directus_users
+    schema:
+      table: image
+      column: user_created
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: image_user_created_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: image
+      many_field: user_created
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: image
+    field: user_updated
+    related_collection: directus_users
+    schema:
+      table: image
+      column: user_updated
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: image_user_updated_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: image
+      many_field: user_updated
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness_channel
+    field: channel_id
+    related_collection: channel
+    schema:
+      table: illness_channel
+      column: channel_id
+      foreign_key_table: channel
+      foreign_key_column: id
+      constraint_name: illness_channel_channel_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness_channel
+      many_field: channel_id
+      one_collection: channel
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: illness_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness_channel
+    field: illness_id
+    related_collection: illness
+    schema:
+      table: illness_channel
+      column: illness_id
+      foreign_key_table: illness
+      foreign_key_column: id
+      constraint_name: illness_channel_illness_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness_channel
+      many_field: illness_id
+      one_collection: illness
+      one_field: channel_other
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: channel_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness
+    field: author
+    related_collection: directus_users
+    schema:
+      table: illness
+      column: author
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: illness_author_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness
+      many_field: author
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness
+    field: channel_main
+    related_collection: channel
+    schema:
+      table: illness
+      column: channel_main
+      foreign_key_table: channel
+      foreign_key_column: id
+      constraint_name: illness_channel_main_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness
+      many_field: channel_main
+      one_collection: channel
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness
+    field: editor
+    related_collection: directus_users
+    schema:
+      table: illness
+      column: editor
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: illness_editor_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness
+      many_field: editor
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness
+    field: medical_subject
+    related_collection: medical_subject
+    schema:
+      table: illness
+      column: medical_subject
+      foreign_key_table: medical_subject
+      foreign_key_column: id
+      constraint_name: illness_medical_subject_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness
+      many_field: medical_subject
+      one_collection: medical_subject
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness
+    field: reviewer
+    related_collection: directus_users
+    schema:
+      table: illness
+      column: reviewer
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: illness_reviewer_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness
+      many_field: reviewer
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness
+    field: teaser
+    related_collection: directus_files
+    schema:
+      table: illness
+      column: teaser
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: illness_teaser_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness
+      many_field: teaser
+      one_collection: directus_files
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness
+    field: user_created
+    related_collection: directus_users
+    schema:
+      table: illness
+      column: user_created
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: illness_user_created_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: illness
+      many_field: user_created
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness
+    field: user_updated
+    related_collection: directus_users
+    schema:
+      table: illness
+      column: user_updated
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: illness_user_updated_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: illness
+      many_field: user_updated
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article_link
+    field: article_id
+    related_collection: article
+    schema:
+      table: article_link
+      column: article_id
+      foreign_key_table: article
+      foreign_key_column: id
+      constraint_name: article_link_article_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_link
+      many_field: article_id
+      one_collection: article
+      one_field: source
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: link_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article_link
+    field: link_id
+    related_collection: link
+    schema:
+      table: article_link
+      column: link_id
+      foreign_key_table: link
+      foreign_key_column: id
+      constraint_name: article_link_link_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_link
+      many_field: link_id
+      one_collection: link
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: article_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: link
+    field: user_created
+    related_collection: directus_users
+    schema:
+      table: link
+      column: user_created
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: link_user_created_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: link
+      many_field: user_created
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: link
+    field: user_updated
+    related_collection: directus_users
+    schema:
+      table: link
+      column: user_updated
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: link_user_updated_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: link
+      many_field: user_updated
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article_channel
+    field: article_id
+    related_collection: article
+    schema:
+      table: article_channel
+      column: article_id
+      foreign_key_table: article
+      foreign_key_column: id
+      constraint_name: article_channel_article_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_channel
+      many_field: article_id
+      one_collection: article
+      one_field: channel_other
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: channel_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article_channel
+    field: channel_id
+    related_collection: channel
+    schema:
+      table: article_channel
+      column: channel_id
+      foreign_key_table: channel
+      foreign_key_column: id
+      constraint_name: article_channel_channel_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_channel
+      many_field: channel_id
+      one_collection: channel
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: article_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: channel
+    field: parent_channel_id
+    related_collection: channel
+    schema:
+      table: channel
+      column: parent_channel_id
+      foreign_key_table: channel
+      foreign_key_column: id
+      constraint_name: channel_parent_channel_id_foreign
+      on_update: RESTRICT
+      on_delete: NO ACTION
+    meta:
+      many_collection: channel
+      many_field: parent_channel_id
+      one_collection: channel
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: channel
+    field: teaser
+    related_collection: directus_files
+    schema:
+      table: channel
+      column: teaser
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: channel_teaser_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: channel
+      many_field: teaser
+      one_collection: directus_files
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: channel
+    field: user_created
+    related_collection: directus_users
+    schema:
+      table: channel
+      column: user_created
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: channel_user_created_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: channel
+      many_field: user_created
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: channel
+    field: user_updated
+    related_collection: directus_users
+    schema:
+      table: channel
+      column: user_updated
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: channel_user_updated_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: channel
+      many_field: user_updated
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: medical_subject
+    field: user_created
+    related_collection: directus_users
+    schema:
+      table: medical_subject
+      column: user_created
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: medical_subject_user_created_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: medical_subject
+      many_field: user_created
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: medical_subject
+    field: user_updated
+    related_collection: directus_users
+    schema:
+      table: medical_subject
+      column: user_updated
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: medical_subject_user_updated_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: medical_subject
+      many_field: user_updated
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: gallery
+    field: teaser
+    related_collection: directus_files
+    schema:
+      table: gallery
+      column: teaser
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: gallery_teaser_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: gallery
+      many_field: teaser
+      one_collection: directus_files
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: gallery
+    field: user_created
+    related_collection: directus_users
+    schema:
+      table: gallery
+      column: user_created
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: gallery_user_created_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: gallery
+      many_field: user_created
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: gallery
+    field: user_updated
+    related_collection: directus_users
+    schema:
+      table: gallery
+      column: user_updated
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: gallery_user_updated_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: gallery
+      many_field: user_updated
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article_medical_subject
+    field: article_id
+    related_collection: article
+    schema:
+      table: article_medical_subject
+      column: article_id
+      foreign_key_table: article
+      foreign_key_column: id
+      constraint_name: article_medical_subject_article_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_medical_subject
+      many_field: article_id
+      one_collection: article
+      one_field: medical_subject
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: medical_subject_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article_medical_subject
+    field: medical_subject_id
+    related_collection: medical_subject
+    schema:
+      table: article_medical_subject
+      column: medical_subject_id
+      foreign_key_table: medical_subject
+      foreign_key_column: id
+      constraint_name: article_medical_subject_medical_subject_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_medical_subject
+      many_field: medical_subject_id
+      one_collection: medical_subject
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: article_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: channel_directus_users
+    field: channel_id
+    related_collection: channel
+    schema:
+      table: channel_directus_users
+      column: channel_id
+      foreign_key_table: channel
+      foreign_key_column: id
+      constraint_name: channel_directus_users_channel_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: channel_directus_users
+      many_field: channel_id
+      one_collection: channel
+      one_field: author
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: directus_users_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: channel_directus_users
+    field: directus_users_id
+    related_collection: directus_users
+    schema:
+      table: channel_directus_users
+      column: directus_users_id
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: channel_directus_users_directus_users_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: channel_directus_users
+      many_field: directus_users_id
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: channel_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness_illness
+    field: illness_id
+    related_collection: illness
+    schema:
+      table: illness_illness
+      column: illness_id
+      foreign_key_table: illness
+      foreign_key_column: id
+      constraint_name: illness_illness_illness_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness_illness
+      many_field: illness_id
+      one_collection: illness
+      one_field: symptoms
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: related_illness_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: illness_illness
+    field: related_illness_id
+    related_collection: illness
+    schema:
+      table: illness_illness
+      column: related_illness_id
+      foreign_key_table: illness
+      foreign_key_column: id
+      constraint_name: illness_illness_related_illness_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: illness_illness
+      many_field: related_illness_id
+      one_collection: illness
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: illness_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: channel_directus_users_2
+    field: channel_id
+    related_collection: channel
+    schema:
+      table: channel_directus_users_2
+      column: channel_id
+      foreign_key_table: channel
+      foreign_key_column: id
+      constraint_name: channel_directus_users_2_channel_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: channel_directus_users_2
+      many_field: channel_id
+      one_collection: channel
+      one_field: reviewer
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: directus_users_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: channel_directus_users_2
+    field: directus_users_id
+    related_collection: directus_users
+    schema:
+      table: channel_directus_users_2
+      column: directus_users_id
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: channel_directus_users_2_directus_users_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: channel_directus_users_2
+      many_field: directus_users_id
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: channel_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article
+    field: channel_main
+    related_collection: channel
+    schema:
+      table: article
+      column: channel_main
+      foreign_key_table: channel
+      foreign_key_column: id
+      constraint_name: article_channel_main_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article
+      many_field: channel_main
+      one_collection: channel
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article
+    field: teaser
+    related_collection: directus_files
+    schema:
+      table: article
+      column: teaser
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: article_teaser_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article
+      many_field: teaser
+      one_collection: directus_files
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article
+    field: user_created
+    related_collection: directus_users
+    schema:
+      table: article
+      column: user_created
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: article_user_created_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: article
+      many_field: user_created
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article
+    field: user_updated
+    related_collection: directus_users
+    schema:
+      table: article
+      column: user_updated
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: article_user_updated_foreign
+      on_update: RESTRICT
+      on_delete: RESTRICT
+    meta:
+      many_collection: article
+      many_field: user_updated
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: null
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article_directus_users_1
+    field: article_id
+    related_collection: article
+    schema:
+      table: article_directus_users_1
+      column: article_id
+      foreign_key_table: article
+      foreign_key_column: id
+      constraint_name: article_directus_users_1_article_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_directus_users_1
+      many_field: article_id
+      one_collection: article
+      one_field: editor
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: directus_users_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article_directus_users_1
+    field: directus_users_id
+    related_collection: directus_users
+    schema:
+      table: article_directus_users_1
+      column: directus_users_id
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: article_directus_users_1_directus_users_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_directus_users_1
+      many_field: directus_users_id
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: article_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: gallery_image
+    field: gallery_id
+    related_collection: gallery
+    schema:
+      table: gallery_image
+      column: gallery_id
+      foreign_key_table: gallery
+      foreign_key_column: id
+      constraint_name: gallery_image_gallery_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: gallery_image
+      many_field: gallery_id
+      one_collection: gallery
+      one_field: image
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: image_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: gallery_image
+    field: image_id
+    related_collection: image
+    schema:
+      table: gallery_image
+      column: image_id
+      foreign_key_table: image
+      foreign_key_column: id
+      constraint_name: gallery_image_image_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: gallery_image
+      many_field: image_id
+      one_collection: image
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: gallery_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article_directus_users_2
+    field: article_id
+    related_collection: article
+    schema:
+      table: article_directus_users_2
+      column: article_id
+      foreign_key_table: article
+      foreign_key_column: id
+      constraint_name: article_directus_users_2_article_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_directus_users_2
+      many_field: article_id
+      one_collection: article
+      one_field: reviewer
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: directus_users_id
+      sort_field: null
+      one_deselect_action: nullify
+  - collection: article_directus_users_2
+    field: directus_users_id
+    related_collection: directus_users
+    schema:
+      table: article_directus_users_2
+      column: directus_users_id
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: article_directus_users_2_directus_users_id_foreign
+      on_update: RESTRICT
+      on_delete: SET NULL
+    meta:
+      many_collection: article_directus_users_2
+      many_field: directus_users_id
+      one_collection: directus_users
+      one_field: null
+      one_collection_field: null
+      one_allowed_collections: null
+      junction_field: article_id
+      sort_field: null
+      one_deselect_action: nullify
