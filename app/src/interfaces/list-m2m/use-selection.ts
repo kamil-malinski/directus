@@ -36,20 +36,13 @@ export default function useSelection(
 		const selection = newSelection.map((item) => {
 			const initial = initialItems.value.find((existent) => existent[junctionField][relationPkField] === item);
 			const draft = items.value.find((draft) => draft[junctionField][relationPkField] === item);
-			// If for the first time an element is selected that does not yet have a connecting element,
-			// but the associated element exists.
-			if (!initial && !draft) {
-				return {
-					[junctionField]: item,
-				};
-			}
 
 			return {
 				...initial,
 				...draft,
 				[junctionField]: {
-					...initial?.[junctionField],
-					...draft?.[junctionField],
+					...initial?.[relationPkField],
+					...draft?.[relationPkField],
 					[relationPkField]: item,
 				},
 			};

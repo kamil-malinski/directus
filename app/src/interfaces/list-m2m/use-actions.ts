@@ -44,17 +44,14 @@ export default function useActions(
 
 	// Returns all items that do not have an existing junction and related item.
 	function getNewItems() {
-		const { junctionField, junctionPkField } = relation.value;
+		const { junctionPkField } = relation.value;
 
 		if (value.value === null || junctionPkField === null) return [];
 
-		return value.value.filter(
-			(item: any) =>
-				typeof item === 'object' &&
-				!item?.[junctionPkField] &&
-				junctionField in item &&
-				typeof item[junctionField] === 'object'
-		) as Record<string, any>[];
+		return value.value.filter((item: any) => typeof item === 'object' && !item?.[junctionPkField]) as Record<
+			string,
+			any
+		>[];
 	}
 
 	// Returns a list of items which related or junction item does exist but had changes.
