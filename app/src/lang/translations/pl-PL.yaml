@@ -1740,6 +1740,8 @@ layouts:
     calendar: Kalendarz
     start_date_field: Pole daty rozpoczęcia
     end_date_field: Pole daty zakończenia
+    optional: Opcjonalnie
+    first_day: Pierwszy dzień tygodnia
   map:
     map: Mapa
     basemap: Mapa bazowa
